@@ -1,0 +1,132 @@
+/*RES11-CSS */
+
+
+
+
+@font-face {
+    font-family: OSTRICH;
+    src: url("OstrichSans-Black.otf")
+}
+
+h1 {
+    width: 50%;
+    height: 50%;
+    float: right;
+    font-size: xx-large;
+    font-family: OSTRICH;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: table;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("MARBLE1.jpg");
+}
+
+/*horizontally spliting page*/
+
+.row {
+    display: table-row;
+    height: 50%;
+}
+
+.row:nth-child(1) {}
+
+.row:nth-child(2) {
+    background-image: url("header0.jpg")
+}
+
+
+
+img {
+    width: auto;
+    height: 500px;
+    float: left;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+}
+
+.topnav {
+    display: inline;
+    list-style-type: none;
+    color: black;
+    font-family: dosis;
+    background-color: grey;
+    float: right;
+
+
+}
+
+/* Style the topnav links */
+.topnav a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: dosis;
+    src: url("Dosis-Bold.ttf")
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: grey;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+
+
+@font-face {
+    font-family: OSTRICH;
+    src: url("OstrichSans-Black.otf")
+}
+
+h1 {
+    font-weight: 700;
+    font-size: xx-large;
+    font-family: OSTRICH;
+}
+
+.p {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    font-size: xx-large;
+}
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 650 px) {
+
+    left,
+    right {
+        width: 100%;
+        height: auto;
+    }
